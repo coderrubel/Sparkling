@@ -24,6 +24,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="<?php echo of_get_option( 'nav_bg_color' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 
 <?php wp_head(); ?>
 
@@ -57,7 +58,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 				</div>
                             <div class="sitetitle">
                                 <div class="row">
-                                    <h1><a href="<?php bloginfo('home'); ?>"><?php bloginfo('title');?></a></h1>
+                                    <h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('title');?></a></h1>
                                 </div>
                             </div>
 			</div>
