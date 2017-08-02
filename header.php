@@ -24,14 +24,14 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="<?php echo of_get_option( 'nav_bg_color' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+<link rel="stylesheet" href=" <?php bloginfo('stylesheet_url');?> ">
 
 <?php wp_head(); ?>
 
 </head>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
@@ -58,7 +58,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 				</div>
                             <div class="sitetitle">
                                 <div class="row">
-                                    <h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('title');?></a></h1>
+                                    <h1><a href="<?php echo esc_url( home_url() ); ?>"> <?php bloginfo('title');?> </a></h1>
                                 </div>
                             </div>
 			</div>
@@ -75,4 +75,4 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 		<div class="container main-content-area">
             <?php $layout_class = get_layout_class(); ?>
 			<div class="row <?php echo $layout_class; ?>">
-				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
+				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?> ">
